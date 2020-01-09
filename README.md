@@ -16,4 +16,11 @@ $b = array_unshift($a,"blue");
 print_r($a); //输出   Array ( [0] => blue [a] => red [b] => green )
 echo $b //输出3 
 
+#  array_splice(array,start,length,array) 移除并取代
+
+$a1=array("a"=>"red","b"=>"green","c"=>"blue","d"=>"yellow");
+$a2=array("a"=>"purple","b"=>"orange");
+array_splice($a1,0,2,$a2);
+print_r($a1);  //输出  Array ( [0] => purple [1] => orange [c] => blue [d] => yellow )
+
 
